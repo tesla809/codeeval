@@ -58,5 +58,6 @@ def main():
 	data = import_info()
 	answer = fizz_buzz(data)
 	print(answer)
+	sys.exit()
 
 main()
