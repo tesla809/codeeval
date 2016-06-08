@@ -19,7 +19,7 @@ def permutation(string):
 	permutations_list = [''.join(p) for p in permutations(string.rstrip('\n'))]
 	
 	# reverse the order keep in ascending order with digits < upper cast < lower case
-	permutations_list = permutations_list[::-1]
+	permutations_list = set(permutations_list[::-1])
 	
 	# test for length len(permutations_list)
 	# turns list into string 
